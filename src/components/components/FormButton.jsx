@@ -1,9 +1,9 @@
 import React from 'react'
 import { Button } from '../components/Form.style'
 
-const FormButton = ({children}) => {
+const FormButton = ({children, onClick}) => {
   return (
-    <Button>
+    <Button onClick={onClick}>
         {children}
     </Button>
   )

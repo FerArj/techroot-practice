@@ -4,13 +4,14 @@ export const Form = styled.div`
     display: flex;
     margin: auto;
     align-items: center; 
+    justify-content: center;
     flex-direction: column;
     width: 40vw;
-    height: 40vh;
+    height: 50vh;
     background-color: red;
     margin-top: 30vh;
     background-color: white;
-    box-shadow: 3px 0px 15px -3px rgba(0,0,0,0.1);
+    box-shadow: 10px 0px 30px -3px rgba(0,0,0,0.2);
     border: 1px solid #e8eaee;
 `
 
@@ -40,5 +41,11 @@ export const Button = styled.button`
 export const Label = styled.label`
     font-size: 2rem;
     color: black;
-    margin-top: 5vh;
+`
+
+export const Paragraph = styled.p`
+    text-decoration: underline;
+    margin-top: 1em;
+    color: purple;
+    cursor: pointer;
 `
