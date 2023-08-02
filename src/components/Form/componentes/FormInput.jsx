@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react'
-import { Input } from '../components/Form.style'
+import { Input } from './Form.style'
 
 const FormInput = forwardRef((props, ref) => {
   return (

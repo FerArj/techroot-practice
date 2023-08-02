@@ -1,5 +1,5 @@
 import React, { useRef } from 'react'
-import Form from '../components/Form';
+import Form from '../components/Form/Form';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios'
 
@@ -11,7 +11,7 @@ const Login = () => {
   const navigate = useNavigate();
 
   function logarUsuario () {
-    axios.post("http://localhost/users/cadastrarUsuario", {
+    axios.post("http://localhost:3000/users/logarUsuario", {
       nome: userNameRef.current.value,
       senha: userPasswordRef.current.value
     }).then((resp) => {

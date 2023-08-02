@@ -1,5 +1,5 @@
 import React, { useRef } from 'react'
-import Form from '../components/Form'
+import Form from '../components/Form/Form'
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
 
@@ -12,7 +12,7 @@ const Cadastro = () => {
   const navigate = useNavigate();
 
   function cadastrarUsuario(){
-    axios.post("http://localhost/users/cadastrarUsuario", {
+    axios.post("http://localhost:3000/users/cadastrarUsuario", {
       nome: userNameRef.current.value,
       email: userEmailRef.current.value,
       senha: userPasswordRef.current.value

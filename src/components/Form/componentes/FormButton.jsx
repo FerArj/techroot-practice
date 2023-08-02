@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button } from '../components/Form.style'
+import { Button } from './Form.style'
 
 const FormButton = ({children, onClick}) => {
   return (

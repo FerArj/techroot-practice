@@ -1,5 +1,5 @@
 import React from 'react'
-import { Form } from '../components/Form.style'
+import { Form } from './Form.style'
 
 const FormContainer = ({children}) => {
   return (
