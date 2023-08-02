@@ -24,7 +24,6 @@ export const Card = styled.div`
     margin-right: 2vw;
     padding: 1vw;
     flex-direction: column;
-    cursor: pointer;
     & h1{
         text-align: center;
         color: white;
@@ -53,6 +52,5 @@ export const Button = styled.button`
     cursor: pointer;
     font-weight: bold;
     font-size: 1rem;
-    margin: auto;
-    display: flex;
+    margin-top: 5vh;
 `
