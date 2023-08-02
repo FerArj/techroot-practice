@@ -26,8 +26,8 @@ const Login = () => {
   return (
     <Form.Container>
         <Form.Label>Bem vindo de volta!</Form.Label>
-        <Form.Input type="text" ref={userNameRef} placeholder="seuemail@gmail.com" ></Form.Input>
-        <Form.Input type="password" ref={userPasswordRef} placeholder="sua senha" ></Form.Input>
+        <Form.Input type="text" ref={userNameRef} placeholder="seuemail@gmail.com" />
+        <Form.Input type="password" ref={userPasswordRef} placeholder="sua senha" />
         <Form.Button onClick={logarUsuario}>Acessar</Form.Button>
         <Form.Paragraph onClick={() => navigate("/cadastro")}>Não tenho uma conta</Form.Paragraph>
     </Form.Container>
