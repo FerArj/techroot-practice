@@ -16,10 +16,11 @@ export const Input = styled.input`
 export const Perguntas = styled.div`
     margin: auto;
     display: flex;
-    margin-top:10vh;
+    margin-top:2vh;
     & input{
         width: 30vw;
         height: 10vh;
+        margin-left: 5vw;
     }
 `
 
@@ -39,3 +40,12 @@ export const Button = styled.button`
     font-weight: bold;
     font-size: 1rem;
 `
+
+export const Checkbox = styled.input`
+    width: 100vw;
+    height: 5vh;
+    margin-top: 5vh;
+    border-radius: 10px;
+    margin-right: 10vw;
+    outline: none;
+`   
