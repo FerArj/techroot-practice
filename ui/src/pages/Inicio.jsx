@@ -6,14 +6,14 @@ import axios from 'axios'
 const Inicio = () => {
 
     const roomNameRef = useRef(null);
-    const navigate = useNavigate('');
+    const navigate = useNavigate();
 
     function criarSala() {
-        axios.post("http://localhost:3000/sala/criarSala",{
+        axios.post("http://localhost:3000/rooms/criarSala",{
             nome: roomNameRef.current.value
         }).then((resp) => {
             if(resp.status == 200){
-                navigate("./perguntas")
+                navigate("/perguntas")
             }
         }).catch(err =>{
             console.log(err);

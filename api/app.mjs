@@ -2,6 +2,7 @@ import express from 'express';
 import cors from 'cors';
 
 import userRoutes from './routes/userRoutes.mjs';
+import roomRoutes from './routes/roomRoutes.mjs'
 
 const app = express();
 
@@ -15,3 +16,4 @@ app.listen(port, () => {
 });
 
 app.use('/users', userRoutes);
+app.use('/rooms', roomRoutes);

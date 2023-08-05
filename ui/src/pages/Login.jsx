@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react'
 import Form from '../components/Form/Form';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios'
@@ -11,12 +11,12 @@ const Login = () => {
   const navigate = useNavigate();
 
   function logarUsuario () {
-    axios.post("http://localhost:3000/users/logarUsuario", {
+    axios.post("http://localhost:3000/users/autenticarUsuario", {
       nome: userNameRef.current.value,
       senha: userPasswordRef.current.value
     }).then((resp) => {
       if(resp.status === 200){
-        console.log("logado");
+        navigate('/inicio')
       }
     }).catch(err => {
       console.log(err);

@@ -18,8 +18,8 @@ const Cadastro = () => {
       senha: userPasswordRef.current.value
     }).then((resp) => {
       if(resp.status === 200){
-        navigate("/*");
         console.log(resp)
+        navigate("/*");
       }
     }).catch((err) => {
         console.log(err);

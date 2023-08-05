@@ -31,7 +31,7 @@ const Perguntas = () => {
   };
 
   const handleSave = () => {
-    axios.post("http://localhost:3000/sala/criarPergunta", {
+    axios.post("http://localhost:3000/rooms/criarPergunta", {
         pergunta,
         respostas
     }).then((resp) => {
