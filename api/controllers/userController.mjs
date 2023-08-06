@@ -9,6 +9,7 @@ const cadastrarUsuario = (req, res) => {
     })
     .catch((erro) => {
       res.status(500).send('Erro ao cadastrar usuário');
+      console.log(erro)
     });
 };
 
